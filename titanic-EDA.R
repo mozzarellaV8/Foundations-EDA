@@ -1,0 +1,33 @@
+# Foundations of Data Science
+# Exploratory Data Analysis (ggplot2)
+# Titanic Exercise
+
+library(ggplot2)
+
+# load data -------------------------------------------------------------------
+
+# titanic is avaliable in your workspace
+titanic
+
+# Check out the structure of titanic
+str(titanic)
+
+# plot class, sex, survival ---------------------------------------------------
+
+# Use ggplot() for the first instruction
+ggplot(titanic, aes(factor(Pclass), fill = factor(Sex))) + 
+  geom_bar(position = "dodge")
+
+# Use ggplot() for the second instruction
+ggplot(titanic, aes(factor(Pclass), fill = factor(Sex))) + 
+  geom_bar(position = "dodge") +
+  facet_grid(. ~ Survived)
+
+# Position jitter (use below)
+posn.j <- position_jitter(0.5, 0)
+
+# Use ggplot() for the last instruction
+ggplot(titanic, aes(factor(Pclass), Age, col = factor(Sex))) +
+  geom_jitter(size = 3, alpha = 0.5, position = posn.j) +
+  facet_grid(. ~ Survived)
+
