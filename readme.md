@@ -6,7 +6,7 @@ _student work in R_ for [Foundations of Data Science](https://www.springboard.co
 
 code:
 
-- [Titanic](titanic-EDA.R) - exploratory plots of variables from the Titanic dataset. 
+- [Titanic](titanic.R) - exploratory plots of variables from the Titanic dataset. 
 - [CHIS](CHIS.R) - in depth plotting of variables from the California Health Intervew Survey. Includes faceted plots, contingency tables, chi-sqaure testing, and a generalized function for mosaic plots of variables.
 
 data sources:
@@ -16,7 +16,7 @@ data sources:
 
 ## Titanic
 
-Life tended to end for men traveling 3rd class.
+Life tended to end, for men travelling 3rd class.
 
 ![t01](plots/titanic-01.png)
 
@@ -25,4 +25,5 @@ Life tended to end for men traveling 3rd class.
 ![t03](plots/titanic-03.png)
 
 ## CHIS
+
 
