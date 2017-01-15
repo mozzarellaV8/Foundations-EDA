@@ -1,8 +1,7 @@
-# Exploratory Data Analysis - Titatnic exercise
------------------------------------------------
+# Exploratory Data Analysis 
+---------------------------
 
 _student work in R_ for [Foundations of Data Science](https://www.springboard.com/workshops/data-science)
-
 
 code:
 
@@ -23,7 +22,4 @@ Life tended to end, for men travelling 3rd class.
 ![t02](plots/titanic-02.png)
 
 ![t03](plots/titanic-03.png)
-
-## CHIS
-
 
