@@ -5,8 +5,8 @@ _student work in R_ for [Foundations of Data Science](https://www.springboard.co
 
 walkthrough:
 
-- [Titantic](#Titanic)
-- [CHIS](#CHIS)
+- [Titantic](#titanic)
+- [CHIS](#chis)
 
 code:
 
