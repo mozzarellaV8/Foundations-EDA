@@ -3,10 +3,6 @@
 
 _student work in R_ for [Foundations of Data Science](https://www.springboard.com/workshops/data-science)
 
-walkthrough:
-
-- [CHIS](#CHIS)
-
 code:
 
 - [CHIS.R](CHIS.R) - in depth plotting of variables from the California Health Intervew Survey. Includes faceted plots, contingency tables, chi-sqaure testing, and a generalized function for mosaic plots of variables.
