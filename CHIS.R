@@ -15,12 +15,11 @@ str(adult)
 summary(adult)
 adult$BM
 
-
 # Define my own general theme
 # assigns GillSans to theme_minimal, 
 # makes axis titles italic set in Times.
 pd.theme <- theme_minimal(base_size = 14, base_family = "GillSans") +
-  theme(plot.margin = unit(c(1, 1, 1, 1), "cm"),
+  theme(plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm"),
         axis.title = element_text(family = "Times", face = "italic", size = 12,
                                   margin(1, 1, 0, 0)))
 
@@ -111,7 +110,7 @@ ggplot(adult, aes (x = SRAGE.P, fill = factor(RBMI))) +
   BMI_fill
 
 # Plot 4 - Faceted density histogram
-ggplot(adult, aes (x = SRAGE.P,fill= factor(RBMI))) + 
+ggplot(adult, aes (x = SRAGE.P,fill = factor(RBMI))) + 
   geom_histogram(binwidth = 1, aes(y = ..density..), color = "white") +
   facet_grid(RBMI ~ .) +
   theme_classic(base_size = 14, base_family = "GillSans") +
@@ -122,14 +121,14 @@ ggplot(adult, aes (x = SRAGE.P,fill= factor(RBMI))) +
   BMI_fill
 
 # Plot 5 - Density histogram with position = "fill"
-ggplot(adult, aes (x = SRAGE.P, fill= factor(RBMI))) + 
+ggplot(adult, aes (x = SRAGE.P, fill = factor(RBMI))) + 
   geom_histogram(aes(y = ..density..),
                  binwidth = 1, position = "fill") +
   labs(title = "BMI Category ~ Age", x = "age", y = "density") +
   BMI_fill + pd.theme
 
 # Plot 6 - The accurate histogram
-ggplot(adult, aes (x = SRAGE.P, fill= factor(RBMI))) + 
+ggplot(adult, aes (x = SRAGE.P, fill = factor(RBMI))) + 
   geom_histogram(aes(y = ..count../sum(..count..)), 
                  binwidth = 1 , position = "fill") +
   labs(title = "BMI Category ~ Age, \"the accurate histogram\"", x = "age") +
@@ -375,8 +374,4 @@ mosaicGG(mtcars, "cyl", "am")
 # Vocab: vocabulary described by education
 library(car)
 mosaicGG(Vocab, "education", "vocabulary")
-
-
-
-
 
